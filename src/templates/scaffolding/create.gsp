@@ -6,6 +6,9 @@
 		<title><g:message code="default.create.label" args="[entityName]" /></title>
 	</head>
 	<body>
+
+
+
 		<a href="#create-${domainClass.propertyName}" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div class="nav" role="navigation">
 			<ul>
@@ -25,6 +28,7 @@
 				</g:eachError>
 			</ul>
 			</g:hasErrors>
+			<h5>Exemplo de personalização da página create.gsp</h5>
 			<g:form url="[resource:${propertyName}, action:'save']" <%= multiPart ? ' enctype="multipart/form-data"' : '' %>>
 				<fieldset class="form">
 					<g:render template="form"/>
